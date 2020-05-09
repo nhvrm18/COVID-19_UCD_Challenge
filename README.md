@@ -89,7 +89,7 @@ From the chart, we can tell that people reacted to some #COVID-19 tweets hotly o
 
 **2. Sentiment Analysis of #COVID-19 Tweets**
 
-[Polarity & Subjectivity of COVID-19 related Tweets](https://public.tableau.com/profile/jessica4482#!/vizhome/Book2_15884623747430/Dashboard7) 
+[Polarity & Subjectivity of COVID-19 related Tweets](https://public.tableau.com/profile/jessica4482#!/vizhome/Book2_15884623747430/SentimentTrend) 
 
 Twitter is not only a place for people to respond to others’ tweets but also a platform to post your tweets and share your feelings. Thus, besides likes/replies/retweets, we also mined the content of COVID-19 related tweets to see how people’s feelings and expressions changed over time. With the help of TextBlob, a sentiment analysis library in Python, we extracted how subjective/objective (subjectivity) the content is and whether the content is positive or negative (polarity) for each tweet.
 
@@ -137,7 +137,7 @@ Different topics cover different time periods, and most resonate with the fact. 
 
 For the sentiment of these topics in news, the topic Life during COVID-19 is undoubtedly the most positive as well as the most objective topic among all the topics, followed by the band containing Game Season, Medical Supply and Medical Tests and Analysis. However, the topic COVID-19 in China, on the other hand, got the most negative and subjective wordings.
 
-[Topic Trend of Tweets](https://public.tableau.com/profile/jessica4482#!/vizhome/Book2_15884623747430/Dashboard8)
+[Topic Trend of Tweets](https://public.tableau.com/profile/jessica4482#!/vizhome/Book2_15884623747430/TopicTrend)
 
 With the topics summarized by the news topic modeling, we used corresponding keywords to classify tweets. After filtering tweets by keywords (described in the chart), suggested by the 8 topics, and the topic trends are shown below: 
 
@@ -145,7 +145,7 @@ With the topics summarized by the news topic modeling, we used corresponding key
 
 The same trend of news topics applies here as the trend of tweets mentioning COVID-19 in China peaked before March and began decreasing since the first case in the US. As shown in the graph, the public paid more and more attention to government actions over time. Medical-related, economic impact, and life during COVID topics increased slowly. As for the game season, mask, and stay at home topics did not show an obvious upward trend over time.  
 
-[Topics Sentiment Analysis on Tweets](https://public.tableau.com/profile/jessica4482#!/vizhome/Book2_15884623747430/Dashboard3)
+[Topics Sentiment Analysis on Tweets](https://public.tableau.com/profile/jessica4482#!/vizhome/Book2_15884623747430/TopicSentiment)
 
 ![alt text](https://github.com/xxz-jessica/COVID-19_UCD_Challenge/blob/master/Dashboard_pict_7.png)
 
