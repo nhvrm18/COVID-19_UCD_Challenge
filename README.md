@@ -85,45 +85,7 @@ Right after the first case reported, mixed sentiments arose, which indicates inc
 In late February, different sentiments tended to diverge, “Assertive” increased, “Fearful” went down. Overloaded with information seems to have made people less sensitive.
 
 
-[Emotions Density](https://public.tableau.com/profile/nanluo#!/vizhome/Book2_v2_15887433980520/SentimentDensity)
 
-Since one tweet can possess more than one sentiment, we also computed the Sentiment Density to show that on average how many different sentiments a tweet had on a single day. This figure will give us a direct impression of how much the tweets were “packed with” different emotions on a day. We then computed the day-on-day change of these metrics and formed the delta metrics.
-
-![alt text](https://github.com/xxz-jessica/COVID-19_UCD_Challenge/blob/master/Dashboard_pict_4.JPG)
-
-Through the general trend of Sentiment Density in the above dashboard, we can infer that from late February till mid-March, people were undergoing the densest sentiments, especially in terms of the negative feelings, followed by the period of late January to mid-February. 
-In April, the Sentiment Density decreased and stayed in a lower position, but it was still higher than that of the beginning. 
-
-
-**3. Analysis on Topics** 
-
-After studying the general trend of sentiments during the researched period, we wanted to add another layer of information to dissect the overall trend. We intended to extract some hot topics that people discussed when talking about COVID-19 and how the polarity (positive/negative) changed under each topic, so we firstly extracted several topics from the COVID-19 related news and then leveraged the keywords in those topics to classify tweets.
-
-[Topic Modeling on News](https://public.tableau.com/profile/willa.yu#!/vizhome/SentimentDashboardwithNewsTopics/Dashboard1?publish=yes)
-
-We utilized Mallet, a natural language processing toolkit, to perform Latent Dirichlet Allocation (LDA) topical modeling, and summarized 8 topics. We named these topics by summarizing the topic keywords returned by the model, and they are as follows (following the descending sequence of frequency): Life during COVID-19, Covid-19 in China, Lockdown Order, Medical Tests & Analysis, Government Actions, Game Season, Economy Impact, Medical Supply. Equipping with the TextBlob’s sentiment analysis, the trendings of these topics over time are as follows:
-
-![alt text](https://github.com/xxz-jessica/COVID-19_UCD_Challenge/blob/master/Dashboard_pict_5.JPG)
-
-Different topics cover different time periods, and most resonate with the fact. For example, before March, only a few topics like COVID-19 in China appeared in coronavirus-related news. After March, owing to the widespread of COVID-19, the number of related news began surging, especially for topics like Medical Tests. One interesting finding is that, with the execution of lockdown order since mid-March, the news about Life during COVID-19 peaked as the majority of news with the highest average polarity score.
-
-For the sentiment of these topics in news, the topic Life during COVID-19 is undoubtedly the most positive as well as the most objective topic among all the topics, followed by the band containing Game Season, Medical Supply and Medical Tests and Analysis. However, the topic COVID-19 in China, on the other hand, got the most negative and subjective wordings.
-
-[Topic Trend of Tweets](https://public.tableau.com/profile/jessica4482#!/vizhome/Book2_15884623747430/TopicTrend)
-
-With the topics summarized by the news topic modeling, we used corresponding keywords to classify tweets. After filtering tweets by keywords (described in the chart), suggested by the 8 topics, and the topic trends are shown below: 
-
-![alt text](https://github.com/xxz-jessica/COVID-19_UCD_Challenge/blob/master/Dashboard_pict_6.png)
-
-The same trend of news topics applies here as the trend of tweets mentioning COVID-19 in China peaked before March and began decreasing since the first case in the US. As shown in the graph, the public paid more and more attention to government actions over time. Medical-related, economic impact, and life during COVID topics increased slowly. As for the game season, mask, and stay at home topics did not show an obvious upward trend over time.  
-
-[Topics Sentiment Analysis on Tweets](https://public.tableau.com/profile/jessica4482#!/vizhome/Book2_15884623747430/TopicSentiment)
-
-![alt text](https://github.com/xxz-jessica/COVID-19_UCD_Challenge/blob/master/Dashboard_pict_7.png)
-
-When analyzing the sentiments, we can see an increasing positivity in most topics. 
-The topic that has the highest positivity is still about Life during COVID-19. And one trend that has the fastest positivity growth rate is the sentiment about stay at home, which echoes the point brought above that people are getting less sensitive during the quarantine. 
-For the debating topic about the facial mask and the stay at home, we can see the polarity went down first at the beginning of the COVID-19 outbreak but went up later during March. The tweets talking about government-related issues tended to have a very fluctuant sentiment trend line, and the polarity went down on the whole. Recently, more and more tweets talking about economic impacts, such as layoffs and unemployment, but the overall sentiment trend towards positive. For the game season, many games were canceled due to the coronavirus so the sentiment of those tweets was not very positive. Lastly, the tweets mentioning ‘China’ became more negative over time. 
 
 ## Conclusions
 
